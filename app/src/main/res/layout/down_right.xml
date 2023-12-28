@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".rightarm.Down">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="819dp"
+        android:layout_below="@+id/videoView"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoleutY="278dp"
+        tools:layout_editor_absoluteY="371dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="1.訓練肌群:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="二頭彎舉主要訓練的是二頭肌\n需固定好上半身才能有效達成訓練效果。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="2.正確姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="身體保持直立，大臂貼緊身體只移動小臂\n上舉至頂點停頓1秒後，慢慢放下啞鈴。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="3.常見錯誤姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="．大臂向前或向後移動\n．身體前傾或是透過身體擺動來舉起啞鈴\n這樣借力完成動作會無法對二頭肌達成有效 的訓練效果。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="4.補充:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="若是第一次接觸二頭彎舉，可以先測試適合自己的重量，選擇可以一組完成12~15下的重量。\n\n\n\n\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/goright_Btn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rightPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:src="@drawable/arm_image"
+        />
+
+
+
+</RelativeLayout>

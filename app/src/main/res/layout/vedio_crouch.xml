@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".leftarm.Down_test">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="704dp"
+        android:layout_below="@+id/videoView"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoleutY="278dp"
+        tools:layout_editor_absoluteY="371dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="1.訓練肌群:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="主要訓練大腿、臀部、以及核心肌群。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="2.正確姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="．站立時雙腳與肩同寬或稍寬\n．保持背部挺直，將手放在胸前合十或伸直\n．下蹲時，將臀部向後坐，保持腰背挺直\n．慢慢彎曲膝蓋以及髖關節\n．膝蓋不要超過腳尖，避免過度壓力\n．臀部與膝蓋平行後，可以慢慢上升\n．上升時，用大腿及臀部推動，將膝蓋和髂關節伸直。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="3.常見錯誤姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="．雙腳內八以及外八\n．臀部沒坐下去\n．重心向前導致腳跟抬起\n．背部拱起\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/goright_Btn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rightPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:src="@drawable/crouch_image"
+        />
+
+
+
+</RelativeLayout>

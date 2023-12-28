@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".leftarm.Down_test">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="704dp"
+        android:layout_below="@+id/videoView"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoleutY="278dp"
+        tools:layout_editor_absoluteY="371dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="1.訓練肌群:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="肩部肌群，包含前三角肌、胸大肌、肱三頭肌和斜方肌。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="2.正確姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="．先以深蹲姿勢將啞鈴拿上膝蓋，藉膝蓋出力將啞鈴舉到開始位置。\n．雙臂舉起平行肩膀，呈八字，小臂垂直地面，上舉時也要保持垂直，所以上舉到頂點會往斜後方舉。\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="3.錯誤姿勢:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxLines="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbarSize="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="．開始時手肘太開，肩膀肌肉會疲勞。\n．上舉期間小臂如果沒有保持垂直會消耗更多體力，甚至有啞鈴掉落的風險。\n．背部過度弓起。這樣不僅會影響你的肩部肌肉的發揮，還會增加你的下背部受傷的風險\n"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/goright_Btn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rightPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:src="@drawable/press_image"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gym01"
+        android:label="做一個猛男"
+        android:roundIcon="@drawable/gym01"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PoseEstimation">
+        <activity android:name="lyi.linyi.posemon.loginpage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:parentActivityName="lyi.linyi.posemon.rightarm.Down"
+            android:name="lyi.linyi.posemon.rightarm.RightArm"/>
+        <activity android:name="lyi.linyi.posemon.crouch.Crouch"
+            android:parentActivityName="lyi.linyi.posemon.crouch.vedio_crouch"
+            />
+        <activity android:name="lyi.linyi.posemon.crouch.vedio_crouch"
+            android:parentActivityName="lyi.linyi.posemon.MainActivity"
+            />
+
+        <activity android:name="lyi.linyi.posemon.press.Press"
+
+            />
+        <activity android:name="lyi.linyi.posemon.rightarm.Down"
+            android:parentActivityName="lyi.linyi.posemon.MainActivity"
+            />
+        <activity
+            android:name="lyi.linyi.posemon.login"
+            android:exported="false" />
+        <activity
+            android:name="lyi.linyi.posemon.signup"
+            android:exported="false" />
+        <activity
+            android:name="lyi.linyi.posemon.main2"
+            android:exported="false"/>
+        <activity
+            android:name="lyi.linyi.posemon.Editprofile"
+            android:exported="false" />
+        <activity
+            android:name="lyi.linyi.posemon.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name="lyi.linyi.posemon.history.History"
+            android:exported="true" />
+        <activity
+            android:name="lyi.linyi.posemon.leftarm.Down_test"
+            android:exported="true" />
+        <activity
+            android:name="lyi.linyi.posemon.press.vedio_press"
+            android:exported="true" />
+
+
+
+    </application>
+
+</manifest>
